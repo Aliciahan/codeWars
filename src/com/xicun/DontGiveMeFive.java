@@ -17,6 +17,7 @@ public class DontGiveMeFive {
 
     private static boolean containsFive(int chiffre){
         String b = String.valueOf(chiffre);
+        
         char [] a = b.toCharArray();
         for (int i=0; i< a.length; i++)
             if (a[i] == '5') {
