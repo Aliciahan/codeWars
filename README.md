@@ -99,3 +99,22 @@ so there are 11 digits `1` for the squares of numbers between 0 and 25.
 *Note that 121 has twice the digit 1.*
 
 
+##Q6 Sum of odd Numbers
+
+Given the triangle of consecutive odd numbers:
+
+~~~
+             1
+          3     5
+       7     9    11
+    13    15    17    19
+ 21    23    25    27    29
+...
+~~~
+
+Calculate the row sums of this triangle from the row index (starting at index 1) e.g.:
+
+~~~java
+rowSumOddNumbers(1); // 1
+rowSumOddNumbers(2); // 3 + 5 = 8
+~~~
