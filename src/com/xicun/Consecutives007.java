@@ -34,13 +34,25 @@ public class Consecutives007 {
         int previous = Integer.MAX_VALUE;
         LinkedList<Integer> l = new LinkedList<>();
         for (Integer v:s){
-            l.add(v==previous? l.pollLast()+v:v);
+            l.add(v==previous? l.pollLast()+v:v);//attention: l.pollLast() removes the last item of List then add it again with pollLast+1
             previous=v;
+            System.out.println("The L is: "+l);
         }
         return l;
     }
 
     public static void main(String args[]){
-
+        ArrayList<Integer> s = new ArrayList<Integer>();
+        s.add (1);
+        s.add (4);
+        s.add (4);
+        s.add (4);
+        s.add (0);
+        s.add (4);
+        s.add (3);
+        s.add (3);
+        s.add (1);
+        System.out.println(sumConse(s));
     }
+
 }
